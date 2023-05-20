@@ -1,7 +1,4 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/getx_basic/screens/home_screen.dart';
 import 'package:flutter_getx/getx_statmanagement/controllers/counter_controller.dart';
 import 'package:get/get.dart';
 
