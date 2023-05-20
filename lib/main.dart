@@ -3,6 +3,7 @@ import 'package:flutter_getx/getx_basic/models/languages.dart';
 import 'package:flutter_getx/getx_basic/screens/home_screen.dart';
 import 'package:flutter_getx/getx_basic/screens/second_screen.dart';
 import 'package:flutter_getx/getx_statmanagement/screens/example_3.dart';
+import 'package:flutter_getx/getx_statmanagement/screens/getx_image_picker.dart';
 import 'package:get/get.dart';
 
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const Example3(),
+      home: const GetxImagePicker(),
       // initialRoute: '/',
 
       getPages: [
