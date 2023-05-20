@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/screens/home_screen.dart';
-import 'package:flutter_getx/screens/second_screen.dart';
+import 'package:flutter_getx/getx_basic/models/languages.dart';
+import 'package:flutter_getx/getx_basic/screens/home_screen.dart';
+import 'package:flutter_getx/getx_basic/screens/second_screen.dart';
+import 'package:flutter_getx/getx_statmanagement/screens/example_1.dart';
+import 'package:flutter_getx/getx_statmanagement/screens/example_2.dart';
 import 'package:get/get.dart';
+import 'package:flutter_getx/getx_basic/screens/localization.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,19 +20,19 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'GetX',
+      locale: Locale('en', 'US'),
+      fallbackLocale: Locale('en', 'US'), translations: Languages(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-     
-      
-      home: const HomeScreen(),
+
+      home: const Example2(),
       // initialRoute: '/',
 
       getPages: [
         GetPage(name: '/', page: () => const HomeScreen()),
-        GetPage(name: '/second', page: () =>  SecondScreen()),
-        
+        GetPage(name: '/second', page: () => const SecondScreen()),
       ],
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/screens/second_screen.dart';
+
 import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -110,10 +110,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     'S/O Ghulam Hazrat',
                     'Flutter Developer',
                     data
-                    
                   ]);
                 },
               ),
+            ),
+            Container(
+              height: Get.height * 0.2,
+              width: Get.width * 0.5,
+              color: Colors.amber,
             )
           ],
         ),
@@ -136,15 +140,59 @@ const style = TextStyle(
 );
 
 List data = const [
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
-  Card(child: ListTile(title: Text('Check'),),),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Check'),
+    ),
+  ),
 ];
